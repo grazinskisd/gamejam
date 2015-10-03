@@ -10,6 +10,7 @@
     <sound>sound\Snd_Button2</sound>
     <sound>sound\Snd_Start_Dialog_1</sound>
     <sound>sound\Snd_Main_Theme_Loop</sound>
+    <sound>sound\Snd_Battle</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="grp_Intro">
@@ -42,8 +43,16 @@
       <sprite>sprites\Spr_Player_Boy_Art</sprite>
       <sprite>sprites\Spr_Player_Girl_Art</sprite>
     </sprites>
+    <sprites name="grp_Battle">
+      <sprite>sprites\Spr_Battle_Pidgey2</sprite>
+      <sprite>sprites\Spr_Battle_Wani1</sprite>
+      <sprite>sprites\Spr_Skill_Scratch</sprite>
+      <sprite>sprites\Spr_Skill_Thrash</sprite>
+    </sprites>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\battleBackground</background>
+  </backgrounds>
   <paths name="paths"/>
   <fonts name="fonts">
     <font>fonts\Ft_Pokemon_30</font>
@@ -51,8 +60,10 @@
   <objects name="objects">
     <object>objects\Obj_Intro_Control</object>
     <object>objects\Obj_Dialog_1</object>
+    <object>objects\Obj_Battle_Control</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\battleRoom</room>
     <room>rooms\Intro</room>
     <room>rooms\game</room>
   </rooms>
