@@ -11,6 +11,7 @@
       <sprite>sprites\sp_ash_up</sprite>
       <sprite>sprites\sp_ash_left</sprite>
       <sprite>sprites\sp_ash_right</sprite>
+      <sprite>sprites\sp_target</sprite>
     </sprites>
     <sprites name="collidable">
       <sprite>sprites\sp_32_32</sprite>
@@ -22,10 +23,14 @@
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
-    <object>objects\ob_ash</object>
     <objects name="collidable">
       <object>objects\ob_32_32</object>
       <object>objects\ob_collidable</object>
+    </objects>
+    <objects name="character">
+      <object>objects\ob_ash</object>
+      <object>objects\ob_rembo</object>
+      <object>objects\ob_target</object>
     </objects>
   </objects>
   <rooms name="rooms">
