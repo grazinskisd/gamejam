@@ -16,6 +16,9 @@
     <sprites name="collidable">
       <sprite>sprites\sp_32_32</sprite>
     </sprites>
+    <sprites name="gunz">
+      <sprite>sprites\sp_bullet_basic</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\back_tileset_main</background>
@@ -31,6 +34,9 @@
       <object>objects\ob_ash</object>
       <object>objects\ob_rembo</object>
       <object>objects\ob_target</object>
+    </objects>
+    <objects name="gunz">
+      <object>objects\ob_bullet_simple</object>
     </objects>
   </objects>
   <rooms name="rooms">
