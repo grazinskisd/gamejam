@@ -25,6 +25,7 @@
     <object>objects\ob_ash</object>
     <objects name="collidable">
       <object>objects\ob_32_32</object>
+      <object>objects\ob_collidable</object>
     </objects>
   </objects>
   <rooms name="rooms">
