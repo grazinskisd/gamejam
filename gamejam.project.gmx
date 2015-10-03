@@ -4,10 +4,58 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
-  <sprites name="sprites"/>
+  <sounds name="sound">
+    <sound>sound\Snd_Intro</sound>
+    <sound>sound\Snd_Button</sound>
+    <sound>sound\Snd_Button2</sound>
+    <sound>sound\Snd_Start_Dialog_1</sound>
+    <sound>sound\Snd_Main_Theme_Loop</sound>
+  </sounds>
+  <sprites name="sprites">
+    <sprites name="grp_Intro">
+      <sprite>sprites\Spr_Start</sprite>
+      <sprite>sprites\Spr_Emerald_Version</sprite>
+      <sprites name="grp_Title">
+        <sprite>sprites\Spr_Title_1</sprite>
+        <sprite>sprites\Spr_Title_2</sprite>
+        <sprite>sprites\Spr_Title_3</sprite>
+        <sprite>sprites\Spr_Title_4</sprite>
+        <sprite>sprites\Spr_Title_5</sprite>
+        <sprite>sprites\Spr_Title_6</sprite>
+      </sprites>
+      <sprites name="grp_Start_Screen">
+        <sprite>sprites\Spr_Background_1</sprite>
+        <sprite>sprites\Spr_Background_2</sprite>
+        <sprite>sprites\Spr_Background_3</sprite>
+        <sprite>sprites\Spr_Background_4</sprite>
+      </sprites>
+      <sprite>sprites\Spr_Fade_Black</sprite>
+      <sprite>sprites\Spr_Fade_White</sprite>
+    </sprites>
+    <sprites name="grp_Game">
+      <sprite>sprites\Spr_Banner_1</sprite>
+      <sprite>sprites\Spr_Game_Intro_Pof_Birch</sprite>
+      <sprite>sprites\Spr_Text_Box</sprite>
+      <sprite>sprites\Spr_Skip_Text</sprite>
+      <sprite>sprites\Spr_Choose_Gender</sprite>
+      <sprite>sprites\Spr_Spotlight</sprite>
+      <sprite>sprites\Spr_Player_Boy_Art</sprite>
+      <sprite>sprites\Spr_Player_Girl_Art</sprite>
+    </sprites>
+  </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <fonts name="fonts">
+    <font>fonts\Ft_Pokemon_30</font>
+  </fonts>
+  <objects name="objects">
+    <object>objects\Obj_Intro_Control</object>
+    <object>objects\Obj_Dialog_1</object>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\Intro</room>
+    <room>rooms\game</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
