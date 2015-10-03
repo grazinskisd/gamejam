@@ -25,17 +25,39 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(keyboard_check(vk_up)){
-    y--;
+            <string>step_size = 4;
+def_image_speed = 0.1;
+
+up_pressed = keyboard_check(vk_up);
+down_pressed = keyboard_check(vk_down);
+left_pressed = keyboard_check(vk_left);
+right_pressed = keyboard_check(vk_right);
+
+if(up_pressed or down_pressed or left_pressed or right_pressed){
+    image_speed = def_image_speed;
+}else{
+    image_speed = 0;
 }
-if(keyboard_check(vk_down)){
-    y++;
+
+if(up_pressed){
+    y -= step_size;
+    if(sprite_index != sp_ash_up)
+        sprite_index = sp_ash_up;
 }
-if(keyboard_check(vk_left)){
-    x--;
+if(down_pressed){
+    y += step_size;
+    if(sprite_index != sp_ash_down)
+        sprite_index = sp_ash_down;
 }
-if(keyboard_check(vk_right)){
-    x++;
+if(left_pressed){
+    x -= step_size;
+    if(sprite_index != sp_ash_left)
+        sprite_index = sp_ash_left;
+}
+if(right_pressed){
+    x += step_size;
+    if(sprite_index != sp_ash_right)
+        sprite_index = sp_ash_right;
 }
 </string>
           </argument>

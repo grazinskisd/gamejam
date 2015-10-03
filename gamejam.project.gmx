@@ -12,6 +12,9 @@
       <sprite>sprites\sp_ash_left</sprite>
       <sprite>sprites\sp_ash_right</sprite>
     </sprites>
+    <sprites name="collidable">
+      <sprite>sprites\sp_32_32</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\back_tileset_main</background>
@@ -20,6 +23,9 @@
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\ob_ash</object>
+    <objects name="collidable">
+      <object>objects\ob_32_32</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\room3</room>
