@@ -19,12 +19,16 @@
     <sprites name="gunz">
       <sprite>sprites\sp_bullet_basic</sprite>
     </sprites>
+    <sprites name="minions">
+      <sprite>sprites\sp_pikachu_up</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\back_tileset_main</background>
     <background>background\back_tileset</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts"/>
   <objects name="objects">
     <objects name="collidable">
       <object>objects\ob_32_32</object>
@@ -37,6 +41,15 @@
     </objects>
     <objects name="gunz">
       <object>objects\ob_bullet_simple</object>
+      <object>objects\ob_bullet</object>
+    </objects>
+    <objects name="minions">
+      <object>objects\ob_pikachu</object>
+      <object>objects\ob_minion</object>
+    </objects>
+    <objects name="particle">
+      <object>objects\ob_ps</object>
+      <object>objects\ob_particles</object>
     </objects>
   </objects>
   <rooms name="rooms">
