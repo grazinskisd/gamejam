@@ -5,9 +5,24 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
-  <backgrounds name="background"/>
+  <sprites name="sprites">
+    <sprites name="Ash">
+      <sprite>sprites\sp_ash_down</sprite>
+      <sprite>sprites\sp_ash_up</sprite>
+      <sprite>sprites\sp_ash_left</sprite>
+      <sprite>sprites\sp_ash_right</sprite>
+    </sprites>
+  </sprites>
+  <backgrounds name="background">
+    <background>background\back_tileset_main</background>
+  </backgrounds>
   <paths name="paths"/>
+  <objects name="objects">
+    <object>objects\ob_ash</object>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\room0</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
