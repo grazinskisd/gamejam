@@ -77,6 +77,7 @@ left_collision = place_meeting(x-sprite_width, y, ob_collidable);
 right_collision = place_meeting(x+sprite_width, y, ob_collidable);
 
 
+// handle direction increment andoverflow
 if (left_pressed){
     direction = (direction + rotation_step) mod 360;
 }
@@ -85,6 +86,7 @@ if (right_pressed){
     direction = ((360 - rotation_step) + direction) mod 360;
 }
 
+// handle sprite draw depending on direction
 if (direction &lt;= 45 or direction &gt; 315){
     sprite_index = sp_ash_right;
 }
@@ -98,6 +100,7 @@ if (direction &lt;= 315 and direction &gt; 225){
     sprite_index = sp_ash_down;
 }
 
+// movement towards direction
 if(up_pressed){
     speed = step_size;
     image_speed = def_image_speed;
@@ -109,6 +112,19 @@ if(up_pressed){
     image_speed = 0;
     image_index = 0;
 }
+
+//collision detection
+image_centre_x = x + 12;
+image_centre_y = y + 16;
+towards_x = image_centre_x + (step_size * cos(degtorad(direction)));
+towards_y = image_centre_y - (step_size * sin(degtorad(direction)));
+
+if (position_meeting(towards_x, towards_y, ob_collidable)){
+    speed = 0;
+    image_speed = 0;
+    image_index = 0;
+}
+
 </string>
           </argument>
         </arguments>
@@ -140,8 +156,9 @@ image_centre_y = y + 16;
 target_x = image_centre_x + (target_distance * cos(degtorad(direction)));
 target_y = image_centre_y - (target_distance * sin(degtorad(direction)));
 
-with(target_instance){instance_destroy();}
-target_instance = instance_create(target_x, target_y, ob_target); 
+target_instance.x = target_x;
+target_instance.y =  target_y;
+
 </string>
           </argument>
         </arguments>
