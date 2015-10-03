@@ -95,7 +95,6 @@
     <instance objName="ob_32_32" x="96" y="320" name="inst_58552B15" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="ob_32_32" x="96" y="288" name="inst_AFCEC29B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="ob_32_32" x="64" y="288" name="inst_C6F2F794" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="ob_rembo" x="224" y="288" name="inst_F2817733" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="ob_pikachu" x="320" y="224" name="inst_DFA7C501" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="ob_pikachu" x="352" y="256" name="inst_AFFE00D2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="ob_pikachu" x="384" y="320" name="inst_8E3EE043" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -107,6 +106,7 @@
     <instance objName="ob_pikachu" x="320" y="320" name="inst_31200D49" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="ob_pikachu" x="352" y="288" name="inst_05013F3B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="ob_particles" x="256" y="224" name="inst_0D9AE422" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ob_rembo" x="96" y="192" name="inst_5897EC25" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="back_tileset_main" x="0" y="32" w="32" h="32" xo="1190" yo="102" id="10002497" name="inst_17DAD029" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

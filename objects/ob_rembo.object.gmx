@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>// Initialize variables for the object
 direction = 90;
+life = 100;
 
 image_centre_x = x + 16;
 image_centre_y = y + 16;
