@@ -15,13 +15,14 @@
   </sprites>
   <backgrounds name="background">
     <background>background\back_tileset_main</background>
+    <background>background\back_tileset</background>
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\ob_ash</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room0</room>
+    <room>rooms\room3</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
