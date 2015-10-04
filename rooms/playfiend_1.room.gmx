@@ -704,6 +704,65 @@
     <instance objName="ob_pikachu" x="1888" y="384" name="inst_E51A73AC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="ob_pikachu" x="1888" y="224" name="inst_721445A7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="ob_particles" x="32" y="32" name="inst_B650E9B3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ob_charmander" x="640" y="1344" name="inst_8B298CA5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ob_charmander" x="832" y="960" name="inst_937C45BC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ob_charmander" x="704" y="1056" name="inst_B4CDD3E3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ob_charmander" x="640" y="1120" name="inst_096D9752" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ob_charmander" x="1568" y="1088" name="inst_618D4C84" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ob_charmander" x="1600" y="1312" name="inst_20B5FFBB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ob_charmander" x="1568" y="1184" name="inst_ADD1B236" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ob_charmander" x="736" y="928" name="inst_3FA9B6F7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ob_charmander" x="1056" y="896" name="inst_95924F6E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ob_charmander" x="1152" y="800" name="inst_BD3AD105" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ob_charmander" x="1088" y="992" name="inst_9FB60B82" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ob_charmander" x="1184" y="1024" name="inst_51FBED3D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ob_squirtle" x="864" y="704" name="inst_BCEC4E9E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ob_squirtle" x="1152" y="672" name="inst_A71E1557" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ob_squirtle" x="1440" y="672" name="inst_05B581E3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ob_squirtle" x="1792" y="608" name="inst_5DDCDBED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ob_squirtle" x="1824" y="512" name="inst_00871A5A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ob_squirtle" x="800" y="384" name="inst_D97DB42D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ob_squirtle" x="672" y="448" name="inst_C8435B94" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ob_squirtle" x="480" y="416" name="inst_66B6DC91" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ob_squirtle" x="480" y="448" name="inst_8598DE92" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ob_squirtle" x="576" y="448" name="inst_08EA982A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ob_squirtle" x="480" y="384" name="inst_B474D74E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ob_squirtle" x="512" y="320" name="inst_44EB1172" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ob_squirtle" x="1504" y="320" name="inst_EAF57847" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ob_squirtle" x="1536" y="352" name="inst_7BCB5C91" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ob_squirtle" x="1440" y="384" name="inst_823F84FA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ob_squirtle" x="1152" y="352" name="inst_2501952E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ob_squirtle" x="1024" y="352" name="inst_57F42E62" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ob_squirtle" x="896" y="352" name="inst_DE2F67C9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ob_squirtle" x="896" y="256" name="inst_60204ECB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ob_squirtle" x="1024" y="224" name="inst_D414A447" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ob_squirtle" x="1056" y="224" name="inst_359C80BF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ob_squirtle" x="192" y="1376" name="inst_A012D3CD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ob_squirtle" x="160" y="1280" name="inst_F08AF72C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ob_squirtle" x="128" y="1184" name="inst_94CD50A4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ob_squirtle" x="256" y="1120" name="inst_84CEF62C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ob_squirtle" x="160" y="992" name="inst_CF835511" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ob_squirtle" x="224" y="928" name="inst_61DE4FC5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ob_squirtle" x="1440" y="1472" name="inst_53E5E892" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ob_squirtle" x="1664" y="1504" name="inst_93C9F0F0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ob_squirtle" x="1920" y="1376" name="inst_3724BE36" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ob_squirtle" x="1888" y="1184" name="inst_41AEE8F9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ob_squirtle" x="1664" y="1120" name="inst_5C7EEAA6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ob_squirtle" x="1824" y="896" name="inst_69817B39" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ob_squirtle" x="1888" y="768" name="inst_93D6BD38" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ob_squirtle" x="1824" y="736" name="inst_F49ECB5D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ob_squirtle" x="1728" y="608" name="inst_D986640A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ob_squirtle" x="1792" y="96" name="inst_982AEF14" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ob_squirtle" x="1600" y="96" name="inst_FE57343E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ob_squirtle" x="832" y="832" name="inst_07036A0C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ob_charmander" x="640" y="896" name="inst_4F136161" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ob_charmander" x="736" y="704" name="inst_5DD97F01" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ob_charmander" x="384" y="672" name="inst_2EE14A44" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ob_charmander" x="1376" y="576" name="inst_F3019A22" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ob_charmander" x="1600" y="800" name="inst_7C1B7B44" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ob_charmander" x="1536" y="896" name="inst_BAA27C06" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ob_charmander" x="1664" y="1024" name="inst_D0FA56BE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ob_charmander" x="1696" y="1248" name="inst_30DA39AB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="back_tileset_main" x="96" y="160" w="32" h="32" xo="170" yo="0" id="10019063" name="inst_7BCE3CA3" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
