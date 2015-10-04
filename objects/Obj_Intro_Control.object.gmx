@@ -73,8 +73,7 @@ alarm[3] = 3240;                // restarts room
             <string>if audio_is_playing(Snd_Intro) {
  audio_stop_sound(Snd_Intro)
 }
-//room_goto(gameStart);
-room_goto(encounterRoom);
+room_goto(gameStart);
 </string>
           </argument>
         </arguments>

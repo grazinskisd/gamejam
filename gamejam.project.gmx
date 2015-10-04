@@ -146,14 +146,14 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\Intro</room>
-    <room>rooms\playfield_1</room>
-    <room>rooms\startingTown</room>
     <room>rooms\gameStart</room>
-    <room>rooms\battleRoom</room>
-    <room>rooms\playfield</room>
+    <room>rooms\startingTown</room>
     <room>rooms\encounterRoom</room>
-    <room>rooms\playfieldMain</room>
+    <room>rooms\battleRoom</room>
+    <room>rooms\playfield_1</room>
     <room>rooms\room_end</room>
+    <room>rooms\playfield</room>
+    <room>rooms\playfieldMain</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
