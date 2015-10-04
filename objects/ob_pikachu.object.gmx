@@ -52,35 +52,62 @@ cooldown = 0;       //cooldown for attacking
             <kind>1</kind>
             <string>//Move if rembo is in particular distance
 
-t_x = ob_rembo.x;   //target x
-t_y = ob_rembo.y;   //target y
-distance = sqrt(sqr(t_x-x) + sqr(t_y-y));
-
-move = false;
-attack = false;
-
-//update cooldown
-if(cooldown &gt; 0){
-    cooldown--;
-}
-
-//follow rembo
-if(distance &lt;= 256){
-    move = true;
-}else{
+if(instance_exists(ob_rembo)){
+    t_x = ob_rembo.x;   //target x
+    t_y = ob_rembo.y;   //target y
+    distance = sqrt(sqr(t_x-x) + sqr(t_y-y));
+    
     move = false;
-}
-
-//attack rembo
-if(distance &lt;= 32){
-    attack = true;
-}else{
     attack = false;
+    
+    //update cooldown
+    if(cooldown &gt; 0){
+        cooldown--;
+    }
+    
+    //follow rembo
+    if(distance &lt;= 256){
+        move = true;
+    }else{
+        move = false;
+    }
+    
+    //attack rembo
+    if(distance &lt;= 16){
+        attack = true;
+    }else{
+        attack = false;
+    }
 }
-
 // die
 if(life &lt;= 0){
-    audio_play_sound(snd_death_scream, 1, 0);
+    rand_sound = irandom(6);
+    switch(rand_sound){
+        case(1):
+            audio_play_sound(snd_blood_1, 1, 0);
+            break;
+        case(2):
+            audio_play_sound(snd_blood_2, 1, 0);
+            break;
+        case(3):
+            audio_play_sound(snd_blood_3, 1, 0);
+            break;
+        case(4):
+            audio_play_sound(snd_blood_4, 1, 0);
+            break;
+        case(5):
+            audio_play_sound(snd_blood_5, 1, 0);
+            break;
+        case(6):
+            audio_play_sound(snd_death_scream, 1, 0);
+            break;
+    }
+
+    image_centre_x = x + sprite_width/2;
+    image_centre_y = y + sprite_height/2;
+    
+    part_system_depth(global.ParticleSystem, depth+1);
+    part_particles_create(global.ParticleSystem, image_centre_x, image_centre_y, global.blood_splat, 40);
     instance_destroy();
 }
 </string>
@@ -131,6 +158,48 @@ if(life &lt;= 0){
       </action>
       <action>
         <libid>1</libid>
+        <id>404</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>-1</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_if_number</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>10</kind>
+            <object>ob_rembo</object>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>2</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>422</id>
+        <kind>1</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
         <id>121</id>
         <kind>0</kind>
         <userelative>-1</userelative>
@@ -153,13 +222,27 @@ if(life &lt;= 0){
           </argument>
           <argument>
             <kind>0</kind>
-            <string>2</string>
+            <string>4</string>
           </argument>
           <argument>
             <kind>4</kind>
             <string>0</string>
           </argument>
         </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>424</id>
+        <kind>2</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
       </action>
       <action>
         <libid>1</libid>
@@ -191,7 +274,7 @@ if(life &lt;= 0){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(attack == true and cooldown == 0){
+            <string>if(attack == true and cooldown == 0 and instance_exists(ob_rembo)){
     scratch = instance_create(ob_rembo.x, ob_rembo.y, ob_scratch);
     scratch.depth = -1;
     cooldown = 30;
@@ -219,6 +302,14 @@ if(life &lt;= 0){
           <argument>
             <kind>1</kind>
             <string>life -= other.damage;
+
+
+image_centre_x = x + sprite_width/2;
+image_centre_y = y + sprite_height/2;
+
+part_system_depth(global.ParticleSystem, depth+1);
+part_type_direction(global.particle, other.direction, other.direction, 0, 10);
+part_particles_create(global.ParticleSystem, image_centre_x, image_centre_y, global.particle, 5);
 </string>
           </argument>
         </arguments>
