@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>timer = 10;
+thrown = false;
 </string>
           </argument>
         </arguments>
@@ -48,13 +49,17 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(timer &gt; 0){
+            <string>if(timer &gt; 0 and thrown == true){
     timer--;
-}else{
+}else if (thrown == true or (thrown == true and collision_rectangle(x,y,x+sprite_width,y+sprite_height, ob_minion, false, false))){
     instance_change(ob_explosion, true);
     x -= sprite_width/2;
     y -= sprite_height/2;
     speed = 0;
+}
+
+if(collision_rectangle(x,y,x+sprite_width,y+sprite_height, ob_rembo, false, false) and not thrown){
+    instance_destroy();
 }
 </string>
           </argument>

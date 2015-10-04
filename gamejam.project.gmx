@@ -15,6 +15,7 @@
     <sounds name="gunz">
       <sound>sound\snd_gun_puck_up</sound>
       <sound>sound\snd_uzi_shoot</sound>
+      <sound>sound\snd_explosion</sound>
     </sounds>
     <sounds name="blood">
       <sound>sound\snd_blood_1</sound>
