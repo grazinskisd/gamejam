@@ -181,6 +181,12 @@ if (direction &lt;= 315 and direction &gt; 225){
 }
 
 // movement towards direction
+
+//collision detection
+
+towards_x = image_centre_x + (step_size * cos(degtorad(direction)));
+towards_y = image_centre_y - (step_size * sin(degtorad(direction)));
+
 if(up_pressed){
     speed = step_size;
     image_speed = def_image_speed;
@@ -193,12 +199,7 @@ if(up_pressed){
     image_index = 0;
 }
 
-//collision detection
-
-towards_x = image_centre_x + (step_size * cos(degtorad(direction)));
-towards_y = image_centre_y - (step_size * sin(degtorad(direction)));
-
-if (position_meeting(towards_x, towards_y, ob_collidable)){
+if(position_meeting(towards_x, towards_y, ob_collidable)){
     speed = 0;
     image_speed = 0;
     image_index = 0;
@@ -326,6 +327,7 @@ if(keyboard_check(ord('G')) and p_cooldown = 0 and pokeballs &gt; 0){
     //if(not audio_is_playing(shoot_soundz))
     //    audio_play_sound(shoot_soundz, 1, 0);
     pokeball = instance_create(image_centre_x, image_centre_y, ob_pokeball);
+    pokeball.thrown = true;
     pokeball.direction = direction;
     pokeball.speed = 7;
     p_cooldown = 50;
@@ -478,6 +480,29 @@ if(life &lt;= 0){
             <kind>1</kind>
             <string>life -= other.damage;
 other.damage = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="ob_pokeball">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>pokeballs++;
 </string>
           </argument>
         </arguments>
