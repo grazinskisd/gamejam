@@ -89,6 +89,12 @@
     <font>fonts\Ft_Pokemon_30</font>
   </fonts>
   <objects name="objects">
+    <objects name="walkable">
+      <object>objects\goToPlayfield</object>
+      <object>objects\goToEncounterMap</object>
+      <object>objects\transition</object>
+      <object>objects\encounter</object>
+    </objects>
     <object>objects\Obj_Intro_Control</object>
     <object>objects\Obj_Dialog_1</object>
     <object>objects\Obj_Battle_Control</object>
@@ -119,10 +125,13 @@
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\startingTown</room>
     <room>rooms\Intro</room>
     <room>rooms\gameStart</room>
     <room>rooms\battleRoom</room>
     <room>rooms\playfield</room>
+    <room>rooms\encounterRoom</room>
+    <room>rooms\playfieldMain</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

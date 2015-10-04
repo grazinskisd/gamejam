@@ -30,6 +30,21 @@
 step_size = 4;
 def_image_speed = 0.3;
 
+if place_meeting(x, y, goToPlayfield) {
+    room_goto(playfieldMain);
+}
+else if place_meeting(x, y, goToEncounterMap) {
+    room_goto(encounterRoom);
+}
+else if place_meeting(x, y, encounter) {
+    if irandom(3) != 0 {
+        room_goto(battleRoom);
+    }
+}
+else if place_meeting(x, y, transition) {
+    room_goto(battleRoom);
+}
+
 up_pressed = keyboard_check(vk_up);
 down_pressed = keyboard_check(vk_down);
 left_pressed = keyboard_check(vk_left);
