@@ -188,6 +188,7 @@
     <instance objName="goToEncounterMap" x="128" y="512" name="inst_6AB7EDC2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="goToEncounterMap" x="192" y="512" name="inst_AEC07B22" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="goToEncounterMap" x="160" y="512" name="inst_7596D538" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Obj_Town_Controller" x="0" y="0" name="inst_007C714B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="back_tileset" x="416" y="352" w="32" h="32" xo="896" yo="480" id="10005586" name="inst_390D190F" depth="1000001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

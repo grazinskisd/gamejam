@@ -11,6 +11,7 @@
     <sound>sound\Snd_Start_Dialog_1</sound>
     <sound>sound\Snd_Main_Theme_Loop</sound>
     <sound>sound\Snd_Battle</sound>
+    <sound>sound\Snd_Town_theme</sound>
     <sounds name="gunz">
       <sound>sound\snd_gun_puck_up</sound>
       <sound>sound\snd_uzi_shoot</sound>
@@ -110,6 +111,7 @@
       <object>objects\transition</object>
       <object>objects\encounter</object>
     </objects>
+    <object>objects\Obj_Town_Controller</object>
     <object>objects\Obj_ash_localizer</object>
     <object>objects\Obj_encounter_Controller</object>
     <object>objects\Obj_Intro_Control</object>
