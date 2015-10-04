@@ -39,6 +39,10 @@ target_y = image_centre_y - (target_distance * sin(degtorad(direction)));
 
 target_instance = instance_create(target_x, target_y, ob_target);
 
+//gunz
+picked_up = false;  //picked up gun?
+cooldown = 0;
+
 </string>
           </argument>
         </arguments>
@@ -281,10 +285,52 @@ target_instance.y =  target_y;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (keyboard_check(ord('F'))){
-    bullet_instance = instance_create(image_centre_x, image_centre_y, ob_bullet_simple);
-    bullet_instance.direction = direction;
+            <string>//if (keyboard_check(ord('F'))){
+//    bullet_instance = instance_create(image_centre_x, image_centre_y, ob_bullet_simple);
+//    bullet_instance.direction = direction;
+//}
+
+if(keyboard_check(ord('F')) and cooldown = 0 and picked_up){
+    if(not audio_is_playing(shoot_soundz))
+        audio_play_sound(shoot_soundz, 1, 0);
+    bullet = instance_create(image_centre_x, image_centre_y, buletz);
+    spread = irandom(buletz.bullet_spread*2) - buletz.bullet_spread;
+    bullet.direction = direction + spread;
+    cooldown = buletz.cooldown_time;
 }
+
+if(keyboard_check_released(ord('F')) and picked_up){
+    audio_stop_sound(shoot_soundz);
+}
+if(cooldown &gt; 0){
+    cooldown--;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="ob_uzi">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>buletz = ob_bullet_uzi;
+shoot_soundz = snd_uzi_shoot;
+picked_up = true;
+
 </string>
           </argument>
         </arguments>
@@ -302,5 +348,8 @@ target_instance.y =  target_y;
   <PhysicsObjectFriction>0.200000002980232</PhysicsObjectFriction>
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
-  <PhysicsShapePoints/>
+  <PhysicsShapePoints>
+    <point>0,0</point>
+    <point>16,16</point>
+  </PhysicsShapePoints>
 </object>

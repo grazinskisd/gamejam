@@ -65,7 +65,7 @@ if(cooldown &gt; 0){
 }
 
 //follow rembo
-if(distance &lt;= 160){
+if(distance &lt;= 256){
     move = true;
 }else{
     move = false;
@@ -76,6 +76,12 @@ if(distance &lt;= 32){
     attack = true;
 }else{
     attack = false;
+}
+
+// die
+if(life &lt;= 0){
+    audio_play_sound(snd_death_scream, 1, 0);
+    instance_destroy();
 }
 </string>
           </argument>
@@ -195,6 +201,29 @@ if(distance &lt;= 32){
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="ob_bullet">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>life -= other.damage;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
   </events>
   <PhysicsObject>0</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
@@ -207,5 +236,8 @@ if(distance &lt;= 32){
   <PhysicsObjectFriction>0.200000002980232</PhysicsObjectFriction>
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
-  <PhysicsShapePoints/>
+  <PhysicsShapePoints>
+    <point>0,0</point>
+    <point>12,12</point>
+  </PhysicsShapePoints>
 </object>
