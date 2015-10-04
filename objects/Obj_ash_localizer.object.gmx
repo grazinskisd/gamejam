@@ -27,6 +27,14 @@
             <kind>1</kind>
             <string>global.ash_x = 992;
 global.ash_y = 384;
+
+global.transitioning = false;
+
+globalvar xp;
+globalvar max_xp;
+
+xp = 0;
+max_xp = 39;
 </string>
           </argument>
         </arguments>

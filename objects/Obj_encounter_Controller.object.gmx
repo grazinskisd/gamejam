@@ -25,7 +25,17 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(global.ash_x, global.ash_y, ob_ash);
+            <string>life = 100;
+
+if global.transitioning {
+    instance_create(global.ash_x, global.ash_y, ob_rembo);
+    instance_create(544, 64,  ob_pikachu);
+    instance_create(576, 128, ob_pikachu);
+    instance_create(544, 192, ob_pikachu);
+}
+else {
+    instance_create(global.ash_x, global.ash_y, ob_ash);
+}
 </string>
           </argument>
         </arguments>

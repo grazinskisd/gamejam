@@ -95,6 +95,9 @@
   <shaders name="shaders">
     <shader type="GLSLES">shaders\shader0.shader</shader>
   </shaders>
+  <fonts name="fonts">
+    <font>fonts\Ft_Pokemon_30</font>
+  </fonts>
   <objects name="objects">
     <objects name="walkable">
       <object>objects\goToPlayfield</object>
@@ -133,8 +136,8 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\playfiend_1</room>
     <room>rooms\Intro</room>
+    <room>rooms\playfield_1</room>
     <room>rooms\startingTown</room>
     <room>rooms\gameStart</room>
     <room>rooms\battleRoom</room>

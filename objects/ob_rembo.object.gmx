@@ -135,8 +135,11 @@ image_centre_y = y + 16;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// gta2 movement
+            <string>if place_meeting(x, y, goToPlayfield) {
+    room_goto(playfield_1);
+}
 
+// gta2 movement
 step_size = 5;
 def_image_speed = 0.3;
 rotation_step = 5;

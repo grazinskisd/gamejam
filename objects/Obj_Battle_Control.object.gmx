@@ -44,9 +44,6 @@ hit_selection = 0         // Index of currently selected attack
 
 myPkmn = "TOTODILE";
 opponentPkmn = "PIDGEY"; // remove when game is ready;
-xp = 0; //debug
-max_xp = 39; // debug
-
 
 my_max_hp = 50.0;
 enemy_max_hp = 35.0 + irandom(35);
@@ -116,15 +113,21 @@ sstring = "";            // string to be printed
      stage = "select_skill";
      break;
     case "select_skill":
-     stage = "play_attack"
-     selected_skill = hit_selection;
- 
-     // deal damage
-     damage = 15 + irandom(40);
-     enemy_hp = enemy_hp - damage;
-     if enemy_hp &lt;= 0 {
-      enemy_hp = 0;
-      alive = false;
+     if global.transitioning = true {
+      z = irandom(3);
+      stage = "object";
+     }
+     else { 
+      stage = "play_attack"
+      selected_skill = hit_selection;
+  
+      // deal damage
+      damage = 15 + irandom(40);
+      enemy_hp = enemy_hp - damage;
+      if enemy_hp &lt;= 0 {
+       enemy_hp = 0;
+       alive = false;
+      }
      }
      break;
     case "play_attack":
@@ -163,7 +166,11 @@ sstring = "";            // string to be printed
       damage = my_hp - 10;
      }
      my_hp = my_hp - damage;
-      
+     
+     if my_hp &lt;= 15 {
+      stage = "run_away";
+     }
+     
      // reduce my hp bar gradually
      my_bar -= 0.0001;
      if (my_hp / my_max_hp) &lt; my_bar {
@@ -196,8 +203,15 @@ sstring = "";            // string to be printed
      
      audio_stop_all();
      room_goto(encounterRoom);
-     returned_from_fight = true;
      break;
+    case "object": 
+     // select attack
+     enemy_attack_selector = irandom(1);
+     stage = "enemy_attacks";
+     break;
+    case "run_away":
+     audio_stop_all();
+     room_goto(encounterRoom);
    }
   }
  } else {
@@ -486,6 +500,37 @@ if stage = "won" {
  draw_sprite_ext(Spr_Skip_Text,image_index/4,x+880,562,1,1,0,c_white,1);
 }
  
+
+if stage = "object" {
+ // draw opponent name
+ draw_text_colour(176, 73, opponentPkmn,c_black,c_black,c_black,c_black,1);
+ 
+ // draw opponent
+ draw_sprite_ext(Spr_Battle_Pidgey2,0,736,192,5,5,0,c_white,1);
+ 
+ // draw me
+ draw_text_colour(662, 302, myPkmn,c_black,c_black,c_black,c_black,1);
+ 
+ // draw my name
+ draw_sprite_ext(Spr_Battle_Wani1,0,256,386,5,5,0,c_white,1);
+ 
+ // draw text for objection;
+ t[0] = "How about no?";
+ t[1] = "Why should I?";
+ t[2] = "You're not my master anymore";
+ t[3] = "naaaah";
+
+ sstring = myPkmn + " says: " + t[z];
+  
+ draw_text_colour(67, 503, string_copy(sstring,0,str),c_grey_dark,c_grey_dark,c_grey_dark,c_grey_dark,1);           // draws the shadow before the main text
+ draw_text_colour(67, 500, string_copy(sstring,0,str),c_grey_dark,c_grey_dark,c_grey_dark,c_grey_dark,1);
+ draw_text_colour(64, 503, string_copy(sstring,0,str),c_grey_dark,c_grey_dark,c_grey_dark,c_grey_dark,1);
+ draw_text_colour(64, 500, string_copy(sstring,0,str),c_white,c_white,c_white,c_white,1);                           // so the main text will be in front
+
+ // draw skip button
+ draw_sprite_ext(Spr_Skip_Text,image_index/4,x+880,562,1,1,0,c_white,1);
+}
+
  
 if stage = "gained_xp" {
  // draw me
@@ -501,6 +546,26 @@ if stage = "gained_xp" {
  else {
   sstring = "" + myPkmn + " gained " + string(will_gain_xp) + " EXP points!";
  }
+  
+ draw_text_colour(67, 503, string_copy(sstring,0,str),c_grey_dark,c_grey_dark,c_grey_dark,c_grey_dark,1);           // draws the shadow before the main text
+ draw_text_colour(67, 500, string_copy(sstring,0,str),c_grey_dark,c_grey_dark,c_grey_dark,c_grey_dark,1);
+ draw_text_colour(64, 503, string_copy(sstring,0,str),c_grey_dark,c_grey_dark,c_grey_dark,c_grey_dark,1);
+ draw_text_colour(64, 500, string_copy(sstring,0,str),c_white,c_white,c_white,c_white,1);                           // so the main text will be in front
+
+ // draw skip button
+ draw_sprite_ext(Spr_Skip_Text,image_index/4,x+880,562,1,1,0,c_white,1);
+}
+
+
+if stage = "run_away" {
+ // draw opponent name
+ draw_text_colour(176, 73, opponentPkmn,c_black,c_black,c_black,c_black,1);
+ 
+ // draw opponent
+ draw_sprite_ext(Spr_Battle_Pidgey2,0,736,192,5,5,0,c_white,1);
+ 
+ // draw text for running away;
+ sstring = myPkmn + " runs away from you.";
   
  draw_text_colour(67, 503, string_copy(sstring,0,str),c_grey_dark,c_grey_dark,c_grey_dark,c_grey_dark,1);           // draws the shadow before the main text
  draw_text_colour(67, 500, string_copy(sstring,0,str),c_grey_dark,c_grey_dark,c_grey_dark,c_grey_dark,1);
