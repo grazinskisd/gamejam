@@ -32,6 +32,8 @@
     <sprites name="gunz">
       <sprite>sprites\sp_bullet_basic</sprite>
       <sprite>sprites\sp_uzi</sprite>
+      <sprite>sprites\sp_pokeball</sprite>
+      <sprite>sprites\sp_explosion</sprite>
     </sprites>
     <sprites name="minions">
       <sprites name="pikachu">
@@ -40,17 +42,19 @@
         <sprite>sprites\sp_pikachu_left</sprite>
       </sprites>
       <sprite>sprites\sp_scratch</sprite>
+      <sprite>sprites\sp_squirtle</sprite>
+      <sprite>sprites\sp_charizard</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\back_tileset_main</background>
     <background>background\back_tileset</background>
+    <background>background\back_end</background>
   </backgrounds>
   <paths name="paths"/>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\shader0.shader</shader>
   </shaders>
-  <fonts name="fonts"/>
   <objects name="objects">
     <objects name="collidable">
       <object>objects\ob_32_32</object>
@@ -67,9 +71,13 @@
       <object>objects\ob_bullet</object>
       <object>objects\ob_uzi</object>
       <object>objects\ob_gun</object>
+      <object>objects\ob_pokeball</object>
+      <object>objects\ob_explosion</object>
     </objects>
     <objects name="minions">
       <object>objects\ob_pikachu</object>
+      <object>objects\ob_charmander</object>
+      <object>objects\ob_squirtle</object>
       <object>objects\ob_minion</object>
       <object>objects\ob_scratch</object>
     </objects>
@@ -79,6 +87,7 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\playfiend_1</room>
+    <room>rooms\room_end</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
