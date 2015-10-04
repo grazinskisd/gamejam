@@ -11,6 +11,11 @@
     <sound>sound\Snd_Start_Dialog_1</sound>
     <sound>sound\Snd_Main_Theme_Loop</sound>
     <sound>sound\Snd_Battle</sound>
+    <sounds name="gunz">
+      <sound>sound\snd_gun_puck_up</sound>
+      <sound>sound\snd_uzi_shoot</sound>
+    </sounds>
+    <sound>sound\snd_death_scream</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="grp_Intro">
@@ -33,6 +38,16 @@
       <sprite>sprites\Spr_Fade_Black</sprite>
       <sprite>sprites\Spr_Fade_White</sprite>
     </sprites>
+    <sprites name="Ash">
+      <sprite>sprites\sp_ash_down</sprite>
+      <sprite>sprites\sp_ash_up</sprite>
+      <sprite>sprites\sp_ash_left</sprite>
+      <sprite>sprites\sp_ash_right</sprite>
+      <sprite>sprites\sp_target</sprite>
+    </sprites>
+    <sprites name="collidable">
+      <sprite>sprites\sp_32_32</sprite>
+    </sprites>
     <sprites name="grp_Game">
       <sprite>sprites\Spr_Banner_1</sprite>
       <sprite>sprites\Spr_Game_Intro_Pof_Birch</sprite>
@@ -51,8 +66,22 @@
       <sprite>sprites\Spr_Battle_Health</sprite>
       <sprite>sprites\Spr_Battle_Xp</sprite>
     </sprites>
+    <sprites name="gunz">
+      <sprite>sprites\sp_bullet_basic</sprite>
+      <sprite>sprites\sp_uzi</sprite>
+    </sprites>
+    <sprites name="minions">
+      <sprites name="pikachu">
+        <sprite>sprites\sp_pikachu_up</sprite>
+        <sprite>sprites\sp_pikachu_down</sprite>
+        <sprite>sprites\sp_pikachu_left</sprite>
+      </sprites>
+      <sprite>sprites\sp_scratch</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
+    <background>background\back_tileset_main</background>
+    <background>background\back_tileset</background>
     <background>background\battleBackground</background>
   </backgrounds>
   <paths name="paths"/>
@@ -63,11 +92,37 @@
     <object>objects\Obj_Intro_Control</object>
     <object>objects\Obj_Dialog_1</object>
     <object>objects\Obj_Battle_Control</object>
+    <objects name="collidable">
+      <object>objects\ob_32_32</object>
+      <object>objects\ob_collidable</object>
+    </objects>
+    <objects name="character">
+      <object>objects\ob_ash</object>
+      <object>objects\ob_rembo</object>
+      <object>objects\ob_target</object>
+    </objects>
+    <objects name="gunz">
+      <object>objects\ob_bullet_simple</object>
+      <object>objects\ob_bullet</object>
+      <object>objects\ob_bullet_uzi</object>
+      <object>objects\ob_uzi</object>
+      <object>objects\ob_gun</object>
+    </objects>
+    <objects name="minions">
+      <object>objects\ob_pikachu</object>
+      <object>objects\ob_minion</object>
+      <object>objects\ob_scratch</object>
+    </objects>
+    <objects name="particle">
+      <object>objects\ob_ps</object>
+      <object>objects\ob_particles</object>
+    </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\battleRoom</room>
     <room>rooms\Intro</room>
-    <room>rooms\game</room>
+    <room>rooms\gameStart</room>
+    <room>rooms\battleRoom</room>
+    <room>rooms\playfield</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

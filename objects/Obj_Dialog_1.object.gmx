@@ -85,7 +85,9 @@ text[15] = "All right!               ";
         <arguments>
           <argument>
             <kind>1</kind>
-            <string></string>
+            <string>audio_stop_all();
+room_goto(battleRoom);
+</string>
           </argument>
         </arguments>
       </action>
