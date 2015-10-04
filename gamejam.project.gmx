@@ -33,7 +33,6 @@
     <background>background\back_tileset</background>
   </backgrounds>
   <paths name="paths"/>
-  <scripts name="scripts"/>
   <objects name="objects">
     <objects name="collidable">
       <object>objects\ob_32_32</object>

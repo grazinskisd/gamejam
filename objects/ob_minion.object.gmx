@@ -80,7 +80,7 @@ if(life &lt;= 0){
 image_centre_x = x + sprite_width/2;
 image_centre_y = y + sprite_height/2;
 
-part_system_depth(global.ParticleSystem, -100);
+part_system_depth(global.ParticleSystem, depth+1);
 part_type_direction(global.particle, other.direction, other.direction, 0, 10);
 part_particles_create(global.ParticleSystem, image_centre_x, image_centre_y, global.particle, 10);
 </string>
