@@ -50,6 +50,7 @@
   <shaders name="shaders">
     <shader type="GLSLES">shaders\shader0.shader</shader>
   </shaders>
+  <fonts name="fonts"/>
   <objects name="objects">
     <objects name="collidable">
       <object>objects\ob_32_32</object>
@@ -77,7 +78,7 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room3</room>
+    <room>rooms\playfiend_1</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
