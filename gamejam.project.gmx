@@ -9,7 +9,14 @@
       <sound>sound\snd_gun_puck_up</sound>
       <sound>sound\snd_uzi_shoot</sound>
     </sounds>
-    <sound>sound\snd_death_scream</sound>
+    <sounds name="blood">
+      <sound>sound\snd_blood_1</sound>
+      <sound>sound\snd_blood_2</sound>
+      <sound>sound\snd_blood_3</sound>
+      <sound>sound\snd_blood_4</sound>
+      <sound>sound\snd_blood_5</sound>
+      <sound>sound\snd_death_scream</sound>
+    </sounds>
   </sounds>
   <sprites name="sprites">
     <sprites name="Ash">
@@ -40,6 +47,9 @@
     <background>background\back_tileset</background>
   </backgrounds>
   <paths name="paths"/>
+  <shaders name="shaders">
+    <shader type="GLSLES">shaders\shader0.shader</shader>
+  </shaders>
   <objects name="objects">
     <objects name="collidable">
       <object>objects\ob_32_32</object>
@@ -49,11 +59,11 @@
       <object>objects\ob_ash</object>
       <object>objects\ob_rembo</object>
       <object>objects\ob_target</object>
+      <object>objects\ob_draw_life</object>
     </objects>
     <objects name="gunz">
       <object>objects\ob_bullet_simple</object>
       <object>objects\ob_bullet</object>
-      <object>objects\ob_bullet_uzi</object>
       <object>objects\ob_uzi</object>
       <object>objects\ob_gun</object>
     </objects>
@@ -63,7 +73,6 @@
       <object>objects\ob_scratch</object>
     </objects>
     <objects name="particle">
-      <object>objects\ob_ps</object>
       <object>objects\ob_particles</object>
     </objects>
   </objects>
