@@ -194,9 +194,9 @@ sstring = "";            // string to be printed
      my_bar = 1.0;
      enemy_bar = 1.0;
      
-     stage = "foe_appears"; // for debugging
      audio_stop_all();
-     room_goto(playfield);
+     room_goto(encounterRoom);
+     returned_from_fight = true;
      break;
    }
   }

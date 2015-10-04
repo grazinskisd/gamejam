@@ -95,6 +95,8 @@
       <object>objects\transition</object>
       <object>objects\encounter</object>
     </objects>
+    <object>objects\Obj_ash_localizer</object>
+    <object>objects\Obj_encounter_Controller</object>
     <object>objects\Obj_Intro_Control</object>
     <object>objects\Obj_Dialog_1</object>
     <object>objects\Obj_Battle_Control</object>
@@ -103,8 +105,8 @@
       <object>objects\ob_collidable</object>
     </objects>
     <objects name="character">
-      <object>objects\ob_ash</object>
       <object>objects\ob_rembo</object>
+      <object>objects\ob_ash</object>
       <object>objects\ob_target</object>
     </objects>
     <objects name="gunz">
@@ -125,8 +127,8 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\startingTown</room>
     <room>rooms\Intro</room>
+    <room>rooms\startingTown</room>
     <room>rooms\gameStart</room>
     <room>rooms\battleRoom</room>
     <room>rooms\playfield</room>

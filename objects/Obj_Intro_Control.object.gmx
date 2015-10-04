@@ -28,7 +28,6 @@
             <string>sprite_index = Spr_Fade_Black;
 image_speed = 1;
 
-
 show_version = false;           //wheather to draw emerald version or not
 show_background = false;        // wheather to draw the animated background
 background = Spr_Background_1;  // sets background image
@@ -74,7 +73,8 @@ alarm[3] = 3240;                // restarts room
             <string>if audio_is_playing(Snd_Intro) {
  audio_stop_sound(Snd_Intro)
 }
-room_goto(gameStart);
+//room_goto(gameStart);
+room_goto(encounterRoom);
 </string>
           </argument>
         </arguments>
